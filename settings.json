@@ -6,25 +6,18 @@
         {
             "command": 
             {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+c"
-        },
-        {
-            "command": 
-            {
                 "action": "moveFocus",
                 "direction": "down"
             },
             "keys": "ctrl+shift+j"
         },
         {
-            "command": "paste"
-        },
-        {
-            "command": "duplicateTab",
-            "keys": "ctrl+shift+d"
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
         },
         {
             "command": 
@@ -35,8 +28,24 @@
             "keys": "ctrl+shift+k"
         },
         {
+            "command": "duplicateTab",
+            "keys": "ctrl+shift+d"
+        },
+        {
+            "command": "paste"
+        },
+        {
             "command": "find",
             "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
         },
         {
             "command": "unbound",
@@ -85,15 +94,6 @@
         {
             "command": 
             {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+d"
-        },
-        {
-            "command": 
-            {
                 "action": "moveFocus",
                 "direction": "left"
             },
@@ -119,16 +119,21 @@
     "alwaysOnTop": false,
     "alwaysShowNotificationIcon": false,
     "alwaysShowTabs": true,
+    "confirmCloseAllTabs": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{d7b20cea-47a9-518c-95a4-c8bd91e2e1c6}",
     "experimental.rendering.forceFullRepaint": false,
     "experimental.rendering.software": true,
-    "launchMode": "default",
+    "focusFollowMouse": true,
+    "launchMode": "focus",
     "minimizeToNotificationArea": false,
     "profiles": 
     {
-        "defaults": {},
+        "defaults": 
+        {
+            "colorScheme": "xcad_hackthebox"
+        },
         "list": 
         [
             {
@@ -201,6 +206,13 @@
                 "source": "Git"
             },
             {
+                "antialiasingMode": "cleartype",
+                "backgroundImage": "C:\\Users\\Nair\\OneDrive\\Pictures\\Saved Pictures\\Wallpapers\\wallpapers\\solid-color-image3.png",
+                "backgroundImageOpacity": 0.74,
+                "bellStyle": "taskbar",
+                "colorScheme": "xcad_hackthebox",
+                "cursorHeight": 21,
+                "cursorShape": "vintage",
                 "font": 
                 {
                     "face": "CaskaydiaCove Nerd Font",
@@ -209,7 +221,10 @@
                 "guid": "{d7b20cea-47a9-518c-95a4-c8bd91e2e1c6}",
                 "hidden": false,
                 "name": "Ubuntu 22.04.2 LTS",
-                "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc"
+                "opacity": 23,
+                "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc",
+                "suppressApplicationTitle": true,
+                "useAcrylic": true
             }
         ]
     },
@@ -562,10 +577,10 @@
         }
     ],
     "showTabsInTitlebar": true,
-    "showTerminalTitleInTitlebar": false,
+    "showTerminalTitleInTitlebar": true,
     "snapToGridOnResize": false,
     "startOnUserLogin": false,
-    "tabWidthMode": "equal",
+    "tabWidthMode": "compact",
     "themes": [],
-    "useAcrylicInTabRow": false
+    "useAcrylicInTabRow": true
 }
